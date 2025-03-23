@@ -118,7 +118,7 @@ export default function ToDoList() {
 
   useEffect(() => {
     // console.log("useEffect worked");
-    const storedTodos = JSON.parse(localStorage.getItem("storagetodos"));
+    const storedTodos = JSON.parse(localStorage.getItem("storagetodos")) ?? [];
     setTodos(storedTodos);
   }, []);
 
